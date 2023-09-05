@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Disply', sans-serif;
+}
+
+body{
+    background-color: rgb(110, 150, 130);
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin: auto;
+}
+.profil-wrapper{
+    width: 350px;
+    height: 450px;
+    position: relative;
+}
+.profil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 350px;
+    height: 450px;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.6);
+    cursor: pointer;
+    transition:  0.5s;
+}
+.profil .profil-image img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 350px;
+    height: 100%;
+    z-index: 10;
+    transition: all .5s;
+    cursor: pointer;
+}
+.profil:hover .profil-image img{
+    margin-top: -130px;
+}
+.icons{
+    position: absolute;
+    padding: 87%;
+    z-index: 1;
+    text-align: left;
+    display: flex;
+    background-color: #ffffff;
+}
+.icons li{
+    list-style: none;
+}
+.icons li a{
+    position: relative;
+    display: block;
+    place-items: center;
+    font-size: 23px;
+    font-weight: bold;
+    transition: 0.2s;
+    transform: translateY(32px);
+
+}
+.icons li a:hover{
+    transition: 0.2s;
+}
+.icons li a i{
+    color: #000;
+    transition: 0.2s;
+}
+.icons li a:hover i{
+    color: rgb(118, 171, 144);
+    transition: 0.2s;
+    transform: translateY(360deg);
+}
+
+.name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 104px;
+    padding-top: 10%;
+    margin-left: 5%;
+    z-index: 1;
+    color: #000000;
+    text-align: left;
+}
+.name .bio{
+   padding-top: 3%;
+}
